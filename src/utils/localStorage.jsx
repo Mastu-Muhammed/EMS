@@ -225,6 +225,19 @@ const employees = [
     },
   },
   // ... You can duplicate structure for Sanya and Vikram
+  {
+    id: 4,
+    firstName: "Sanya",
+    email: "employee4@example.com",
+    password: "123",
+  },
+  {
+    id: 5,
+    firstName: "Vikram",
+    email: "employee5@example.com",
+    password: "123",
+  },  
+  
 ];
 
 
@@ -235,19 +248,6 @@ const admin = {
   firstName: "Admin",
   
 };
-
-
-// ✅ Function to set localStorage only if not already set
-// export const setLocalStorage = () => {
-//   if (!localStorage.getItem("employees")) {
-//     localStorage.setItem("employees", JSON.stringify(employees));
-//     console.log("Default employees set.");
-//   }
-//   if (!localStorage.getItem("admin")) {
-//     localStorage.setItem("admin", JSON.stringify(admin));
-//     console.log("Default admin set.");
-//   }
-// };
 
 export const setLocalStorage = () => {
   if (!localStorage.getItem('employees')) {
